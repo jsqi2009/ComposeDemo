@@ -52,7 +52,9 @@ fun LoginPage(
         LoadingDialog(loadingText = "登录中...") { showLoadingDialog = false }
     }
 
-    Column(horizontalAlignment = Alignment.CenterHorizontally) {
+    Column(
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
         TitleBar(title = stringResource(id = R.string.login)) { navHostController.popBackStack() }
         CoilImage(
             model = R.drawable.ic_about_logo,
